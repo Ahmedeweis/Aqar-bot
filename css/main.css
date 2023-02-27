@@ -103,6 +103,7 @@ flex-direction: row-reverse;
 /* start land */
 .land {
   padding-top:var(--main-padding-top);
+  padding-right:10px;
 }
 .land .container {
   display: flex;
@@ -115,12 +116,6 @@ flex-direction: row-reverse;
  @media (max-width: 768px) {
   .land {
     position:relative;
-    /*
-    background-image: url(../image/land-photo.png);
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size: 50%;*/*
-  
   }
   .land .container  {
     display: flex;
@@ -131,7 +126,7 @@ flex-direction: row-reverse;
     position: relative;
 }
   .land-contant {
-    position: absolute;
+    position:absolute;
     top:10px;
   }
   .land-img img {
