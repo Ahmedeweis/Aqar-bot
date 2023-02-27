@@ -114,10 +114,12 @@ flex-direction: row-reverse;
  }
  @media (max-width: 768px) {
   .land {
+    position:relative;
+    /*
     background-image: url(../image/land-photo.png);
     background-repeat:no-repeat;
     background-position:center center;
-    background-size: 50%;
+    background-size: 50%;*/*
   
   }
   .land .container  {
@@ -126,12 +128,16 @@ flex-direction: row-reverse;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    position: relative;
 }
+  .land-contant {
+    position: absolute;
+    top:10px;
+  }
   .land-img img {
-    display:none;
+    opacity:40%;
   }
 }
-
 .land-contant {
   display: flex;
   flex-direction: column;
