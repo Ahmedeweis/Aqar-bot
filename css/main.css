@@ -71,6 +71,11 @@ ul {
 header {
   padding-top: var(--main-padding-top);
 }
+@media (max-width: 768px) {
+  header {
+    padding-top: 20px;
+  }
+}
 .links {
 display: flex;
 justify-content:space-between;
@@ -104,6 +109,7 @@ flex-direction: row-reverse;
 .land {
   padding-top:var(--main-padding-top);
   padding-right:10px;
+  padding-left:10px;
 }
 .land .container {
   display: flex;
