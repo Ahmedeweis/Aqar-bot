@@ -117,7 +117,7 @@ flex-direction: row-reverse;
   align-items: center;
 }
 .land-img img {
-  max-width:70%;
+  max-width:100%;
  }
  @media (max-width: 768px) {
   .land {
