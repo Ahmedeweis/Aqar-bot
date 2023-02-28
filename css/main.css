@@ -358,18 +358,26 @@ color: var(--main-color);
 .contact  .big-one .content form {
   flex-basis: 70%;
 }
+fieldset {
+  text-align:right;
+  margin-bottom: 15px;
+}
+legend {
+  padding: 1px 10px;
+}
 .contact   .big-one .content form .main-input {
-  padding: 20px;
+  padding-top: 10px;
   display: block;
-  border: 1px solid #ccc;
-  margin-bottom: 30px;
+  border: none;
   width: 100%;
+  text-align:right;
 }
 .contact  .big-one .content form .main-input:focus {
   outline: none;
 }
 .contact  .big-one .content form textarea.main-input {
   height: 135px;
+  overflow: hidden;
 }
 /* Medium */
 @media (min-width: 992px) {
@@ -403,17 +411,18 @@ color: var(--main-color);
   text-align:right;
 }
 .contact  .big-one .info .address {
+
+}
+.contact  .big-one .content .info h4:nth-of-type(2) {
+  margin-top: 24px;
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 28px;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: right;
   font-feature-settings: 'liga' off;
   color: var(--main-color); 
-}
-.contact  .big-one .content .info h4:nth-of-type(2) {
-  margin-top: 90px;
 }
 @media (max-width: 767px) {
   .contact  .big-one .content .info h4:nth-of-type(2) {
