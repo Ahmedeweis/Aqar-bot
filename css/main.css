@@ -200,7 +200,7 @@ cursor:pointer;
   font-weight:700;
   font-size: 25px;
 }
-.whatsapp-num {
+.whatsapp-num  {
   position: relative;
   background-color:var(--main-color);
   width:100%;
@@ -218,6 +218,8 @@ cursor:pointer;
  left:50%;
  top: -2%;
 }
+
+
 /* End land */
 /* start description */
 .description {
@@ -506,5 +508,16 @@ legend {
   font-family: 'Barlow', sans-serif;;
 }
 /* end footer */
+
+/* Advanced style */
+@media (max-width: 767px) {
+  .v2 {
+    font-size:15px;
+  }
+  .small-line-responsive {
+      font-size:15px !important;
+  }
+}
+
 
 
