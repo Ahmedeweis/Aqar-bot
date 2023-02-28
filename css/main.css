@@ -310,6 +310,7 @@ color: var(--main-color);
 /* start contact us */
 .contact .container h2 {
   padding-top:var(--main-padding-top);
+  padding-bottom:30px;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -319,14 +320,15 @@ color: var(--main-color);
   font-feature-settings: 'liga' off;
   color: var(--main-color);
 }
+
 .big-one {
   margin-top:40px;
   display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-start;
   flex-direction:row-reverse;
+  width: 100%;
 }
-/* Medium */
 @media (max-width: 992px) {
   .big-one {
     display:flex;
@@ -338,11 +340,10 @@ color: var(--main-color);
 .contact .big-one .content {
   display: flex;
   justify-content: space-between;
-  width:100%;
-  border: 2px solid green;
-  padding:20px;
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  flex-basis: 65%;
+  padding: 20px;
+  box-shadow: 0px 5px 40px rgb(0 0 0 / 10%);
+  border-radius: 15px;
 }
 @media (min-width: 992px) {
   .content {
@@ -356,11 +357,12 @@ color: var(--main-color);
   }
 }
 .contact  .big-one .content form {
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 fieldset {
   text-align:right;
   margin-bottom: 15px;
+  border-radius:5px;
 }
 legend {
   padding: 1px 10px;
@@ -375,28 +377,36 @@ legend {
 .contact  .big-one .content form .main-input:focus {
   outline: none;
 }
-.contact  .big-one .content form textarea.main-input {
-  height: 135px;
-  overflow: hidden;
+.contact  .big-one .content form textarea .main-input {
+  height: 100px;
 }
 /* Medium */
 @media (min-width: 992px) {
   .contact  .big-one .content form textarea.main-input{
-    height: 200px;
+    height:114px;
   }
 }
 .contact .big-one .content form input[type="submit"] {
   background-color: var(--main-color);
   color: white;
-  padding: 20px;
+  padding: 10px;
   border: none;
+  width:100%;
   display: flex;
   margin-left: auto;
   text-transform: uppercase;
   cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .contact  .big-one .content .info {
-  flex-basis: 25%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-basis: 30%;
+  margin-left:20px;
 }
 @media (max-width: 767px) {
   .contact  .big-one .content .info {
@@ -405,23 +415,18 @@ legend {
   }
 }
 .contact  .big-one .content .info h4 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 18px;
   text-align:right;
 }
-.contact  .big-one .info .address {
 
-}
-.contact  .big-one .content .info h4:nth-of-type(2) {
+.contact  .big-one .content .info .add {
   margin-top: 24px;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 30px;
-  letter-spacing: 0em;
   text-align: right;
-  font-feature-settings: 'liga' off;
   color: var(--main-color); 
 }
 @media (max-width: 767px) {
@@ -430,21 +435,40 @@ legend {
   }
 }
 .contact  .big-one .content .info address {
-  color: #777;
   line-height: 2;
+  font-weight:500;
+  font-style:normal;
+  text-align: right;
+}
+.contact  .big-one .content .info div a {
+  text-align:right;
+  color: var(--main-color);
 }
 @media (max-width: 767px) {
   .contact   .big-one .content .info address {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+  }
+}
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .icons{
+    margin: 20px 0;
   }
 }
 .QR {
-  margin-right:20px;
-  width:50%;
+  margin-right: 20px;
+  flex-basis: 30%;
 }
+
 @media (max-width: 992px) {
   .QR {
     width:70%;
+    margin-top:30px;
   }
 }
 @media (max-width: 767px) {
@@ -467,7 +491,21 @@ legend {
 .QR .whatsapp-num .whats-icon {
   transform: translate(-50%,-79%);
 }
-
 /* end contact us */
+/* start footer */
+.footer p{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-transform:capitalize;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+  font-weight:600;
+  font-family: 'Barlow', sans-serif;;
+}
+/* end gooter */
 
 
