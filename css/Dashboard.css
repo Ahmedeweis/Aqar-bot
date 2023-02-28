@@ -233,6 +233,17 @@ span {
   color: black;
   background-color: white;
 }
+.app-btn {
+  color: white;
+  background-color:var(--main-color);
+  transition:0.5s;
+}
+.app-btn a{
+  color:inherit;
+}
+.app-btn:hover {
+  color: black;
+}
 @media (max-width: 992px) {
     .control button {
         font-size:18px;
