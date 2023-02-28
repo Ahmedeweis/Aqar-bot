@@ -12,14 +12,13 @@
   --main-color:#3AAA35;
   --secondry-color:#868686;
   --main-padding-top: 67px;
-  --main-padding-bottom: 100px;
+  --main-padding-bottom: 67px;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: 'Cairo', sans-serif;
-  height:1000px;
 }
 a {
   text-decoration: none;
@@ -104,7 +103,7 @@ flex-direction: row-reverse;
 .active {
   color: var(--main-color);
 }
-/* end Header */
+/* end Header */ 
 /* start land */
 .land {
   padding-top:var(--main-padding-top);
@@ -131,12 +130,12 @@ flex-direction: row-reverse;
     flex-direction: column;
     position: relative;
 }
-  .land-contant {
-    position:absolute;
-    top:10px;
-  }
+
   .land-img img {
     opacity:40%;
+    position: absolute;
+    transform:translate(-50% ,-50%);
+    top:50%;
   }
 }
 .land-contant {
@@ -220,5 +219,95 @@ cursor:pointer;
  top: -2%;
 }
 /* End land */
+/* start description */
+.description {
+  padding-top:var(--main-padding-top);
+  padding-bottom:30px;
+}
+.description .container .qout {
+  display:flex;
+  flex-direction: column;
+  margin-top:20px;
+}
+.description .container .qout .up-image {
+  width:5%;
+  align-self:flex-end;
+}
+
+.description .container .qout p{
+  text-align: right;
+  padding:10px;
+  font-family: Cairo;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+
+}
+.description .container .qout .down-image{
+  width:5%;
+}
+.description .container h2 {
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: right;
+font-feature-settings: 'liga' off;
+color: #3AAA35;
+}
+
+.parent {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.person-box {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.person-box img,.arrows img {
+  width:90%;
+}
+.person-box span {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .person-box span {
+    font-size:15px;
+  }
+}
+.arrows {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+/* end description */
+/* start Advantages  */
+.Advantages {
+  padding-top: var(--section-padding);
+  background-color: var(--section-background);
+}
+.Advantages .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
+}
+.Advantages .feat {
+  padding: 10px;
+  text-align: center;
+}
+.Advantages .feat h3 {
+  font-weight: 800;
+  margin: 10px 0;
+  font-size:15px;
+}
+
+/* end Advantages  */
 
 
