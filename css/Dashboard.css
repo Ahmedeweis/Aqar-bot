@@ -1,0 +1,177 @@
+* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Cairo';
+}
+/* variables */
+:root {
+  --main-color:#3AAA35 ;
+  --secondry-color:#868686;
+  --main-padding-top: 67px;
+  --main-padding-bottom: 67px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Text-font-style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+/* End Glopal Rules */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .Text-font-style {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+/* start header  */
+header {
+  padding-top: var(--main-padding-top);
+}
+@media (max-width: 768px) {
+  header {
+    padding-top: 20px;
+  }
+}
+.links {
+display: flex;
+justify-content:space-between;
+align-items: center;
+text-align: center;
+flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    flex-direction: column;
+}
+}
+.links li a {
+  color: var(--secondry-color);
+}
+.links li .active {
+  color: var(--main-color);
+}
+.links li a:hover {
+  color: var(--main-color);
+}
+.active {
+  color: var(--main-color);
+}
+/* end Header */ 
+/* start land */
+.land  h1 {
+    padding-top:100px;
+    text-align: center;
+    font-style: normal;
+    font-feature-settings: 'liga' off;
+    color: var(--main-color);
+    font-family: Cairo;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+}
+.land .container {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.control {
+    display:flex;
+    flex-direction:column;
+}
+.whatsapp-num {
+    position: relative;
+    background-color:var(--main-color);
+    width:100%;
+    font-weight:700;
+    font-size: 25px;
+    text-align: center;
+    padding:10px;
+    border-radius:12px;
+    color:white;
+    margin-top:10px;
+}
+.whats-icon {
+   position:absolute;
+   transform: translate(-50%,-50%);
+   left:50%;
+   top: -2%;
+}
+
+.control button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align:center;
+    font-feature-settings: 'liga' off;
+    color: var(--main-color);
+    border: none;
+    background-color:transparent;
+    cursor:pointer;
+    margin-top:40px;
+}
+/* end land */
+/* start footer */
+.footer p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform:capitalize;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+    font-weight:600;
+    font-family: 'Barlow', sans-serif;;
+  }
+  /* end footer */
