@@ -204,17 +204,19 @@ flex-direction: row-reverse;
   margin-top:50px;
 }
 .land-contant .box button {
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: right;
-font-feature-settings: 'liga' off;
-color: var(--main-color);
-border: none;
-background-color:transparent;
-cursor:pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: right;
+    font-feature-settings: 'liga' off;
+    color: var(--main-color);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-bottom: 50px;
+    z-index: 999;
 }
 .land-contant .box .button-p {
   font-weight:500;
