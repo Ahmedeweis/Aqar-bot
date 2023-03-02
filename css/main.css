@@ -221,6 +221,7 @@ flex-direction: row-reverse;
 .land-contant .box .button-p {
   font-weight:500;
   font-size: 25px;
+  z-index: 100;
 }
 .download-p {
   margin-bottom:5px;
