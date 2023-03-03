@@ -148,7 +148,7 @@ flex-direction: row-reverse;
 /* end Header */  
 /* start land */
 .land {
-  padding-top:var(--main-padding-top);
+  padding-top:50px;
   padding-right:10px;
   padding-left:10px;
 }
@@ -207,15 +207,13 @@ flex-direction: row-reverse;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
-    line-height: 30px;
-    letter-spacing: 0em;
+    /* letter-spacing: 0em; */
     text-align: right;
-    font-feature-settings: 'liga' off;
+    /* font-feature-settings: 'liga' off; */
     color: var(--main-color);
     border: none;
-    background-color: transparent;
+    background-color: white;
     cursor: pointer;
-    padding-bottom: 50px;
     z-index: 999;
 }
 .land-contant .box .button-p {
