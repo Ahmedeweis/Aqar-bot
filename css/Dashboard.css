@@ -105,7 +105,6 @@ flex-direction: row-reverse;
 /* end Header */ 
 /* start land */
 .land  h1 {
-    padding-top:100px;
     text-align: center;
     font-style: normal;
     font-feature-settings: 'liga' off;
@@ -115,7 +114,6 @@ flex-direction: row-reverse;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0em;
-    padding-bottom:40px;
 }
 .land .container {
     display:flex;
@@ -163,27 +161,17 @@ span {
     margin-top:10px;
     background-color:black;
 }
-.wts-vic {
 
-}
-.wts-vic::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
-        bottom: 50px;
-        background-color: rgb(0, 0, 0);
-        z-index: 1;
-}
+
 .whats-icon {
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: -20%;
     z-index: 2;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25%;
+    border: solid 2px black;
 }
 .app-num {
     position: relative;
@@ -198,27 +186,16 @@ span {
     margin-top:10px;
     background-color:grren;
 }
-.app-vic {
 
-}
-.app-vic::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    bottom: 51px;
-    background-color:var(--main-color);
-    z-index: 1;
-}
 .app-icon {
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: -20%;
     z-index: 2;
+    background-color:var(--main-color);
+    border-radius: 25%;
+    border: solid 1px var(--main-color);
 }
 
 .wts-btn {
@@ -257,10 +234,45 @@ span {
    .container {
         flex-direction:column;
     }
-    .control {
-        padding-top:45px;
+    .control{
+      padding-top:40px;
     }
 
+}
+.toggle-menu {
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .toggle-menu,
+  .mob-logo {
+    display: none;
+  }
+  .mob-logo {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .links {
+    display: none;
+  }
+  header .container {
+    text-align: right;
+  }
+  .toggle-menu {
+    padding-top:20px;
+  }
+  .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color:rgba(58, 170, 53, 30%);
+    padding:10px;
+  }
+  .mob-remove {
+    display: none;
+  }
 }
 /* end land */
 /* start footer */

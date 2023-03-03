@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>لوحة التحكم</title>
     <!-- Reset Elements  -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
     <!-- main css file -->
     <link rel="stylesheet" href="../css/Dashboard.css" />
     <!-- google fonts -->
@@ -14,26 +14,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../image/Aqar-Pot-icon.jpg">
 </head>
 <body>
    <!-- start header -->
    <header>
     <div class="container">
+      <div class="mob-logo"><img  src="../image/Aqar-Pot.png"></div>
+      <img class="toggle-menu" src="../image/equal.png">
       <ul class="links Text-font-style ">
-        <li><a href="file:///E:/Lan_Production/gethub/Aqar-bot/index.html"><img src="../image/Aqar-Pot.png"></a></li>
+        <li><a class="mob-remove" href="../index.html"><img src="../image/Aqar-Pot.png"></a></li>
         <li><a href="../index.html">الرئيسية</a></li>
-        <li><a href="">عن عقار بوت</a></li>
-        <li><a href="">المزايا</a></li>
-        <li><a href="">تواصل معنا</a></li>
-        <li><a class="active" href="Html/Dashboard.html">لوحة التحكم</a></li>
+        <li><a href="../index.html#description">عن عقار بوت</a></li>
+        <li><a href="Advantages.html">المزايا</a></li>
+        <li><a href="../index.html#contact">تواصل معنا</a></li>
+        <li><a class="active" href="#Dashboard">لوحة التحكم</a></li>
       </ul>
     </div>
   </header>
   <!-- end header -->
   <!-- start land -->
-  <section class="land">
+  <section id="Dashboard" class="land">
     <div class="container"><h1>لوحة التحكم</h1></div>
-    <div class="container">
+    <div class="container v2">
         <div class="control">
             <div class="whatsapp-num">
                 <div class="wts-vic">
@@ -41,7 +44,7 @@
                 </div>
                 <span>دخول الوسيط العقاري ( تطبيق الجوال )</span>               
             </div>   
-            <button class="wts-btn"><a href="https://wa.me/ 966550855055">اضغط هنا</a> </button>      
+            <button class="wts-btn"><a href="https://wa.me/966550855055">اضغط هنا</a></button>      
         </div>
         <div class="control">
             <div class="app-num">
@@ -50,7 +53,7 @@
                 </div>
                 <span>دخول الوسيط العقاري ( تطبيق الواتساب )</span>
             </div>  
-            <button style="background-color:green; border-color:transparent;" class="app-btn"><a href="https://wa.me/ 966550855055">اضغط هنا</a></button>       
+            <button style="background-color:green; border-color:transparent;" class="app-btn"><a href="https://wa.me/966550855055">اضغط هنا</a></button>       
         </div>
     </div>
   </section> 

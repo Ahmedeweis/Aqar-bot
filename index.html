@@ -1,12 +1,14 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الرئيسية</title>
+    <title>تطبیق عقار بوت</title>
     <!-- Reset Elements  -->
     <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- main css file -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- google fonts -->
@@ -14,17 +16,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/Aqar-Pot-icon.jpg">
   </head>
   <body>
     <!-- start header -->
-    <header>
+    <header id="main">
       <div class="container">
+        <div class="mob-logo"><img  src="image/Aqar-Pot.png"></div>
+        <img class="toggle-menu" src="image/equal.png">
         <ul class="links Text-font-style ">
-          <li><a href="file:///E:/Lan_Production/gethub/Aqar-bot/index.html"><img src="image/Aqar-Pot.png"></a></li>
-          <li><a class="active" href="">الرئيسية</a></li>
-          <li><a href="">عن عقار بوت</a></li>
-          <li><a href="">المزايا</a></li>
-          <li><a href="">تواصل معنا</a></li>
+          <li><a class="mob-remove" href="#main"><img src="image/Aqar-Pot.png"></a></li>
+          <li><a class="active" href="#main">الرئيسية</a></li>
+          <li><a href="#description">عن عقار بوت</a></li>
+          <li><a href="Html/Advantages.html">المزايا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
           <li><a href="Html/Dashboard.html">لوحة التحكم</a></li>
         </ul>
       </div>
@@ -45,8 +50,12 @@
           <div class="box">
             <p class="download-p">حمل التطبيق</p>
             <div class="buttons">
+              <!-- google link need to be there !!!!!!!! -->
+              <!-- google link need to be there !!!!!!!! -->      
               <a href=""><img class="left-img"  src="image/App-Store.png"></a>
-              <a href=""><img src="image/google-play.png"></a>           
+              <a href=""><img src="image/google-play.png"></a> 
+              <!-- google link need to be there !!!!!!!! --> 
+              <!-- google link need to be there !!!!!!!! -->               
             </div>
           </div>
           <!-- #3 -->
@@ -54,7 +63,7 @@
             <p class="whats-p">أو استخدم الواتس اب</p>
             <div class="whatsapp-num">
               <img class="whats-icon" src="image/whatsapp-icon.png">
-              <span>055 0855 055</span>
+              <span><a class="a-num" href="https://wa.me/966550855055">055 0855 055</a></span>
             </div>
           </div>
         </div>
@@ -63,7 +72,7 @@
     </section>
     <!-- end land -->
     <!-- start description -->
-    <section class="description">
+    <section id="description" class="description">
       <div class="container">
         <h2>عقار بوت</h2>
         <div class="qout"><img class="up-image" src="image/up-Vector.svg"><p class="small-line-responsive">هو الرد الآلي لإرسال واستقبال طلباتكم (بيع او شراء) من خلال اكبر تجمع للوسطاء العقاريين ‏المعتمدين لتقديم‏ تجربة
@@ -97,69 +106,74 @@
     </section>  
     <!-- end description -->
     <!-- start Advantages -->
-    <section class="Advantages">
+    <section id="Advantages" class="Advantages">
+      <div class="container v2"><h2 class="mazaya">المزایا</h2></div>
         <div class="container">
           <!-- first #1 -->
           <div class="feat">
             <img src="image/choices.png">
-            <h3>ارسال عدد غير محدود من الطلبات.</h3>
+            <h3>ارسال عدد غير محدود من الطلبات</h3>
           </div>
           <div class="feat">
             <img src="image/ad-blocker.png">
-            <h3>منصة للتواصل مع الوسطاء بدون إعلان.</h3>
+            <h3>منصة للتواصل مع الوسطاء بدون إعلان</h3>
           </div>
           <div class="feat">
             <img src="image/networking.png">
-            <h3>أكبر شبكة وسطاء عقاريين في المملكة.</h3>
+            <h3>أكبر شبكة وسطاء عقاريين في المملكة</h3>
           </div>
           <div class="feat">
             <img src="image/bot.png">
-            <h3>رد آلي على مدار الساعة طوال الأسبوع.</h3>
+           <h3>رد آلي على مدار الساعة طوال الأسبوع</h3>
           </div>
           <div class="feat">
             <img src="image/promotion.png">
-            <h3>أفضل وسيلة مجانية لتسويق عقارك.</h3>
+            <h3>أفضل وسيلة مجانية لتسويق عقارك</h3>
           </div>
           <div class="feat">
             <img src="image/fast-time.png">
-            <h3>سرعة وصول الطلب لجميع الوسطاء.</h3>
+            <h3>سرعة وصول الطلب لجميع الوسطاء</h3>
           </div>
           <div class="feat">
             <img src="image/information-system.png">
-            <h3>دقة المعلومات وموثوقيتها.</h3>
+            <h3>دقة المعلومات وموثوقيتها</h3>
           </div>
           <div class="feat">
             <img src="image/personal-information.png">
-            <h3>سهولة الانضمام كوسيط عقاري في اي وقت.</h3>
+            <h3>سهولة الانضمام كوسيط عقاري في اي وقت</h3>
           </div>
           <!-- last #8 -->
         </div>
     </section>
     <!-- end Advantages -->
     <!-- start contact us-->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <h2 class="">تواصل معنا</h2>
         <div class="big-one">
           <!-- Right hand side-->
           <div class="content">
-            <form action="">
+            <form action="https://formsubmit.co/info@aqarbot.sa" method="POST">
               <fieldset>
-                <legend> الاسم</legend>	
-                <input class="main-input" type="text" name="name" placeholder="اكتب اسمك " />		
+                <legend>الاسم</legend>	
+                <input class="main-input" type="text" name="name" placeholder="اكتب اسمك " required />		
               </fieldset>
               <fieldset>
                 <legend>البريد الالكتروني</legend>	
-              <input class="main-input" type="email" name="mail" placeholder="name@email.com" />
+              <input class="main-input" type="email" name="mail" placeholder="name@email.com" required />
               </fieldset>
               <fieldset>
                 <legend>الرسالة</legend>	
-              <textarea class="main-input" name="message" placeholder="اكتب الرسالة هنا"></textarea>
+              <textarea class="main-input" name="message" placeholder="اكتب الرسالة هنا" required></textarea>
               </fieldset>
               <input type="submit" value="ارسال" />
             </form>
             <div class="info">
-              <h4>Info@aqarbot. sa</h4>
+              <h4>
+                یمكنك التواصل معنا عبر الایمیل
+                <br>
+                Info@aqarbot.sa
+              </h4>
                 <div>
                   <h4 class="add">:العنوان</h4>
                   <address>الرياض ، حي الحمراء ، طريق الإمام
@@ -167,15 +181,14 @@
                     ص.ب 13241
                     <br>
                   </address>
-                    <a href="https://wa.me/ 966550855055"> https://wa.me/966550855055</a>
                     <br>
                 </div>
                 <div class="icons">
-                  <img src="image/Group-20.png">
-                  <img src="image/Group-21.png">
-                  <img src="image/Group-22.png">
-                  <img src="image/Group-23.png">
-                  <img src="image/Group-24.png">
+                  <a href="https://www.instagram.com/aqarbot/"><img src="image/icons8-instagram-24.png"></a> 
+                  <a href="https://twitter.com/aqarbot_sa"><img src="image/icons8-twitter-30.png"></a> 
+                  <a href="https://www.snapchat.com/aqarbot_sa"><img src="image/icons8-snapchat-30.png"></a>
+                  <a href="Info@aqarbot.sa"><img src="image/icons8-mail-account-32.png"></a>
+                  <a href="https://wa.me/966550855055"><img src="image/icons8-whatsapp-30.png"></a>
                 </div>
             </div>
           </div>
@@ -183,11 +196,11 @@
           <!-- left hand side-->
           <div class="QR">
             <div class="QR-img">
-              <img src="image/QR.png">
+              <a href="https://wa.me/966550855055"><img src="image/QR.png"></a>
             </div>
             <div class="whatsapp-num v2">
               <img class="whats-icon" src="image/logos-whatsapp.png">
-              <span>055 0855 055</span>
+              <a class="a-num" href="https://wa.me/966550855055">055 0855 055</a>
             </div>
           </div>
           <!-- end left hand side -->

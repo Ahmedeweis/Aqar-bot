@@ -75,6 +75,7 @@ header {
     padding-top: 20px;
   }
 }
+
 .links {
 display: flex;
 justify-content:space-between;
@@ -89,7 +90,7 @@ flex-direction: row-reverse;
     align-items: flex-end;
     text-align: center;
     flex-direction: column;
-}
+  }
 }
 .links li a {
   color: var(--secondry-color);
@@ -103,7 +104,43 @@ flex-direction: row-reverse;
 .active {
   color: var(--main-color);
 }
-/* end Header */ 
+.toggle-menu {
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .toggle-menu,
+  .mob-logo {
+    display: none;
+  }
+  .mob-logo {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .links {
+    display: none;
+  }
+  header .container {
+    text-align: right;
+  }
+  .toggle-menu {
+    padding-top:20px;
+  }
+  .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color:rgba(58, 170, 53, 30%);
+    padding:10px;
+  }
+  .mob-remove {
+    display: none;
+  }
+}
+
+/* end Header */  
 /* start land */
 .land {
   padding-top:var(--main-padding-top);
@@ -212,6 +249,12 @@ cursor:pointer;
   color:white;
   margin-top:10px;
 }
+.a-num {
+  color:white ;
+}
+.a-num:hover {
+  color:black ;
+}
 .whats-icon {
  position:absolute;
  transform: translate(-50%,-50%);
@@ -219,12 +262,10 @@ cursor:pointer;
  top: -2%;
 }
 
-
 /* End land */
 /* start description */
 .description {
   padding-top:var(--main-padding-top);
-  padding-bottom:30px;
 }
 .description .container .qout {
   display:flex;
@@ -297,6 +338,22 @@ color: var(--main-color);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-gap: 20px;
+}
+.Advantages .v2 {
+  display:flex;
+  justify-content:flex-end;
+}
+
+.Advantages div h2 {
+  padding-top:var(--main-padding-top);
+  padding-bottom:30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 30px;
+  letter-spacing: 0em;
+  font-feature-settings: 'liga' off;
+  color: var(--main-color);
 }
 .Advantages .feat {
   padding: 10px;
@@ -455,6 +512,12 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.icons a img {
+  width: 35px;
+}
+.icons a img:hover {
+  transform:scale(1.2);
 }
 @media (max-width: 767px) {
   .icons{
