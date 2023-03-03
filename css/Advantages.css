@@ -144,7 +144,6 @@
 /* start land */
 .adv-land {
    height:100vh;
-   padding-top:60px;
 }
 .adv-land .container {
     display: flex;
