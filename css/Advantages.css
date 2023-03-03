@@ -94,7 +94,7 @@
     }
   }
   .links li a {
-    color: var(--secondry-color);
+    color:black;
   }
   .links li .active {
     color: var(--main-color);
