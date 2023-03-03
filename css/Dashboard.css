@@ -90,17 +90,19 @@ flex-direction: row-reverse;
     flex-direction: column;
 }
 }
-.links li a {
-  color:black;
-}
+  .links li a {
+    color:var(--secondry-color);
+  }
 .links li .active {
   color: var(--main-color);
 }
 .links li a:hover {
   color: var(--main-color);
 }
-.active {
-  color: var(--main-color);
+  @media (max-width: 768px) {
+  .links li a {
+    color:black;
+  }
 }
 /* end Header */ 
 /* start land */

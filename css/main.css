@@ -140,6 +140,11 @@ flex-direction: row-reverse;
   }
 }
 
+@media (max-width: 768px) {
+  .links li a {
+    color:black;
+  }
+}
 /* end Header */  
 /* start land */
 .land {
