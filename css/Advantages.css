@@ -133,17 +133,15 @@
   display: block;
   text-align: right;
 }
-.header .links ul li  {
-  font-size:20px;
+.header .linkss ul li  {
   font-weight:700;
 }
-.header .links ul li a {
+.header .linkss ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
   transition: var(--main-duration);
   text-align: right;
-  font-size:30px;
 }
 .header .linkss ul li a:hover {
   padding-left: 25px;
@@ -157,7 +155,6 @@
 .force {
   font-family: 'Cairo';
   color: black;
-  padding-top:20px;
 }
 
  header {
