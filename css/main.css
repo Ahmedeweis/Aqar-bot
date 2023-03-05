@@ -59,21 +59,103 @@ ul {
     width: 1170px;
   }
 }
-/* Medium */
-@media (max-width: 992px) {
-  .Text-font-style {
-    font-weight: 700;
-    font-size: 20px;
-  }
-}
+
 /* start header  */
-header {
-  padding-top: var(--main-padding-top);
+
+.header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-top: 34px;
 }
-@media (max-width: 768px) {
-  header {
-    padding-top: 20px;
-  }
+.header .logo {
+  width: 60px;
+}
+.header .linkss {
+  position: relative;
+  text-align: right;
+}
+.header .linkss:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .linkss .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top:20px;
+}
+.header .linkss .icon span {
+  background-color: var(--main-color);
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .linkss .icon span:first-child {
+  width: 100%;
+}
+.header .linkss .icon span:nth-child(2) {
+  width: 100%;
+  transition: var(--main-duration);
+}
+.header .linkss .icon span:last-child {
+  width: 100%;
+}
+.header .linkss ul {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background-color:#9de699;
+  position: absolute;
+  right: 0;
+  min-width:500px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 999;
+  text-align: right;
+  padding:10px;
+}
+
+.header .linkss:hover ul {
+  display: block;
+  text-align: right;
+}
+.header .links ul li  {
+  font-size:20px;
+  font-weight:700;
+}
+.header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  transition: var(--main-duration);
+  text-align: right;
+  font-size:30px;
+}
+.header .linkss ul li a:hover {
+  padding-left: 25px;
+}
+.header .linkss ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+.header .linkss ul li {
+  margin-top:10px;
+}
+.force {
+  font-family: 'Cairo';
+  color: black;
+  padding-top:20px;
+}
+
+ header {
+  padding-top: var(--main-padding-top);
 }
 
 .links {
@@ -83,15 +165,7 @@ align-items: center;
 text-align: center;
 flex-direction: row-reverse;
 }
-@media (max-width: 768px) {
-  .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: center;
-    flex-direction: column;
-  }
-}
+
 .links li a {
   color: var(--secondry-color);
 }
@@ -107,48 +181,23 @@ flex-direction: row-reverse;
 .toggle-menu {
   font-size: 22px;
 }
-@media (min-width: 768px) {
-  .toggle-menu,
-  .mob-logo {
-    display: none;
-  }
-  .mob-logo {
-    text-align: left;
+@media (max-width: 768px) {
+  header {
+    display:none;
   }
 }
-@media (max-width: 767px) {
-  .links {
-    display: none;
-  }
-  header .container {
-    text-align: right;
-  }
-  .toggle-menu {
-    padding-top:20px;
-  }
-  .toggle-menu:hover + ul {
-    display: flex;
-    flex-direction: column;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color:rgba(58, 170, 53, 30%);
-    padding:10px;
-  }
-  .mob-remove {
-    display: none;
+@media (min-width: 768px) {
+  .header {
+    display:none;
+    background-color: red;
   }
 }
 
-@media (max-width: 768px) {
-  .links li a {
-    color:black;
-  }
-}
-/* end Header */  
+/* end Header */ 
+
 /* start land */
 .land {
-  padding-top:50px;
+  padding-top:40px;
   padding-right:10px;
   padding-left:10px;
 }
@@ -195,31 +244,26 @@ flex-direction: row-reverse;
 }
 .land-contant .box p {
   font-style: normal;
-  line-height: 40px;
   display: flex;
   align-items: center;
   text-align: right;
   font-feature-settings: 'liga' off;
   color: #000000;
-  margin-top:50px;
+  margin-top:30px;
 }
 .land-contant .box button {
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
-    /* letter-spacing: 0em; */
+    font-size: 49px;
     text-align: right;
-    /* font-feature-settings: 'liga' off; */
     color: var(--main-color);
     border: none;
-    background-color: white;
+    background-color: transparent;
     cursor: pointer;
-    z-index: 999;
 }
 .land-contant .box .button-p {
   font-weight:500;
   font-size: 25px;
-  z-index: 100;
 }
 .download-p {
   margin-bottom:5px;
